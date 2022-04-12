@@ -10,7 +10,7 @@
     }
 
     @media (min-width: 1201px) {
-        padding: 25px 0;
+        padding: 25px 15px;
     }
 
     &__container {
@@ -132,6 +132,16 @@
         fill: $first-text-color;
         margin-right: 10px;
         transition: $main-trans;
+
+        @media (min-width: 481px) and (max-width: 1200px) {
+            max-width: 14px;
+            max-height: 14px;
+        }
+
+        @media (min-width: 1201px) {
+            max-width: 16px;
+            max-height: 16px;
+        }
     }
 }
 .header__open-menu {
