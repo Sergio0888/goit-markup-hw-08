@@ -134,10 +134,16 @@
     background-color: #2F303A;
     color: $second-text-color;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 480px) {
         margin-bottom: 20px;
     }
     
+    @media (min-width: 481px) and (max-width: 1200px) {
+        margin-bottom: 20px;
+        width: 450px;
+        align-self: center;
+    }
+
     @media (min-width: 1201px) {
         position: absolute;
         left: 0;
