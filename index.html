@@ -42,11 +42,14 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <div class="header__open-menu">
-              <svg class="header__open-menu-open">
-                  <use href="./images/icons/open-close.svg#icon-burg"></use>
+            <button type="button" 
+            class="header__open-menu is-open"
+            data-menu-open 
+            aria-label="Переключатель меню">
+              <svg class="header__open-menu-icon">
+                  <use class="header__open-menu-icon-cross" href="./images/icons/open-close.svg#icon-burg"></use>
               </svg>
-            </div>
+            </button>
         </div>
     </header>
     <main>
@@ -412,7 +415,7 @@
 <!-- Модальное окно -->
 
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <div class="container form__container">
                 <form class="modal__form">
@@ -487,8 +490,43 @@
             <div class="modal__close" data-modal-close>
             </div>
         </div>
-    </div> -->
+    </div>
+
+    <!-- Меню для мобильного -->
+
+        <div class="mobile-menu__modal is-hidden" data-menu>
+            <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__link header__menu-link-color" href="./index.html">Студия</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
+            </ul>
+
+            <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-tel" href="tel:+380991111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-mail" href="mailto:info@example.com">info@devstudio.com</a>
+                </li>
+            </ul>
+                    <ul class="mobile-menu__socials">
+                        <li class="mobile-menu__socials-item"> <a class="mobile-menu__socials-link  _column" href="#">Instagram</a> </li>
+                        <li class="mobile-menu__socials-item"> <a class="mobile-menu__socials-link  _column" href="#">Twitter</a> </li>
+                        <li class="mobile-menu__socials-item"> <a class="mobile-menu__socials-link  _column" href="#">Facebook</a> </li>
+                        <li class="mobile-menu__socials-item"> <a class="mobile-menu__socials-link" href="#">LinkedIn</a> </li>
+                    </ul>
+            
+            
+            
+                    <div class="mobile-menu__close" data-menu-close>
+                <svg class="mobile-menu__close-icon">
+                    <use href="./images/icons/open-close.svg#icon-close"></use>
+                </svg>
+            </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

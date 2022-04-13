@@ -18,6 +18,10 @@
     opacity: 1;
     visibility: visible;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+    @media (max-width: 480px) {
+        padding: 94px 15px;
+    }
 }
 
 // Модальное окно

@@ -144,21 +144,3 @@
         }
     }
 }
-.header__open-menu {
-    display: flex;
-    width: 40px;
-    height: 40px;
-
-    @media (min-width: 481px) {
-        display: none;
-    }
-
-    &-open {
-        width: 40px;
-        height: 40px;
-
-        &:hover {
-            fill: $main-color;
-        }
-    }
-}

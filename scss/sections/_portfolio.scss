@@ -1,7 +1,20 @@
 .portfolio__filter {
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+
+    @media (max-width: 480px) {
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+
+        &-item {
+            margin-bottom: 15px;
+        }
+    
+    }
+
+    @media (min-width: 481px) {
+        margin-bottom: 50px;
+        justify-content: center; 
+    }
 
     &-item:not(:last-child) {
         margin-right: 8px;
@@ -30,13 +43,33 @@
 
 .portfolio__list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
+    @media (max-width: 480px) {
+        flex-direction: column;
+
+    }
+
+    @media (min-width: 481px) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
 }
 
+
 .portfolio__item {
-    margin-bottom: 30px;
     transition: $main-trans;
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+        width: calc(50% - 15px);
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+    }
+    @media (min-width: 1201px) {
+        margin-bottom: 30px;
+    }
 
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -52,6 +85,13 @@
     position: relative;
     overflow: hidden;
     height: 294px;
+}
+
+.portfolio__item-box-image {
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
 }
 
 .portfolio__image-box {
