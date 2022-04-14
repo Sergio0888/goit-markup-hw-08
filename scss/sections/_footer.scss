@@ -1,0 +1,109 @@
+.footer {
+    padding: 60px 60px;
+    background-color: #2F303A;
+
+    &__container {
+        display: flex;
+    }
+    
+    &__contact-list {
+        margin-top: 20px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.72;
+        color: $second-text-color;
+    }
+
+    &__contact-item {
+        margin-bottom: 9px;
+    }
+
+    &__contact-link {
+        font-size: 14px;
+        line-height: 1.72;
+        color: rgba(255, 255, 255, 0.6);
+        transition: $main-trans;
+
+        &:hover, &:focus {
+            color: $main-color;
+        }
+    }
+
+    &__contact-address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        color: $second-text-color;
+    }
+
+    &__socials-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 70px;
+        margin-top: 12px;
+        width: 206px;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 20px;
+    }
+}
+
+.footer__btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+}
+
+.subscribe-box {
+    width: 570px;
+    position: relative;
+    margin-left: 93px;
+    margin-top: 12px;  
+}
+
+.subscribe-input {
+    position: absolute;
+    left: 0;
+    width: 362px;
+    height: calc(50px + 2px);
+    padding-left: 16px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    color: $second-text-color;
+
+    &::placeholder {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus-within {
+        outline: 2px solid $main-color;
+    }
+}
+.subscribe-btn-box {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.subscribe-btn-icon {
+    width: 24px;
+    height: 24px;
+}

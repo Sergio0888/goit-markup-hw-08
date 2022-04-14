@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+}
