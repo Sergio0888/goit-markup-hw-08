@@ -1,6 +1,17 @@
 .header {
-    padding: 25px 0;
     border-bottom: 1px solid #ECECEC;
+
+    @media (max-width: 480px) {
+        padding: 10px 15px;
+    }
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+        padding: 21px 15px;
+    }
+
+    @media (min-width: 1201px) {
+        padding: 25px 0;
+    }
 
     &__container {
         display: flex;
@@ -15,7 +26,18 @@
 
     &__menu {
         display: flex;
-        margin-left: 93px; 
+
+        @media (max-width: 480px) {
+            display: none;
+        }
+
+        @media (min-width: 481px) and (max-width: 1200px) {
+            margin-left: 88px;
+        }
+
+        @media (min-width: 1200px) {
+            margin-left: 93px;
+        }
     }
 
     &__menu-item {
@@ -41,6 +63,12 @@
         transition: $main-trans;
         font-weight: 500;
 
+        @media (min-width: 481px) and (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+        }
+
         &-color {
             color: $main-color;
         }
@@ -48,13 +76,32 @@
 
     &__address {
         display: flex;
-        align-items: center;
         transition: $main-trans;
+
+        @media (max-width: 480px) {
+            display: none;
+        }
+        @media (min-width: 481px) and (max-width: 1200px) {
+            flex-direction: column;
+        }
+        @media (min-width: 1201px) {
+            align-items: center;
+        }
+
     }
 
     &__address-item {
-        margin-left: 50px;
         display: flex;
+
+        @media (max-width: 1200px) {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (min-width: 1201px) {
+            margin-left: 50px;
+        }
     }
 
     &__address-link {
@@ -62,6 +109,12 @@
         color: $first-text-color;
         transition: $main-trans;
         font-weight: 500;
+
+        @media (min-width: 481px) and (max-width: 1200px) {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+        }
 
         &:hover, &:focus {
             color: $main-color;
@@ -79,5 +132,23 @@
         fill: $first-text-color;
         margin-right: 10px;
         transition: $main-trans;
+    }
+}
+.header__open-menu {
+    display: flex;
+    width: 40px;
+    height: 40px;
+
+    @media (min-width: 481px) {
+        display: none;
+    }
+
+    &-open {
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+            fill: $main-color;
+        }
     }
 }
