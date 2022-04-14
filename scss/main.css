@@ -451,6 +451,12 @@ a {
   fill: #2196F3;
 }
 
+.modal__form-input:focus ~
+.modal__input-item >
+.modal__input-icon {
+  fill: #2196F3;
+}
+
 .modal__form-textarea {
   height: 120px;
   padding: 12px 16px;
@@ -1248,11 +1254,11 @@ a {
   }
 }
 
-.client__item:hover {
+.client__item:hover, .client__item:focus {
   border-color: #2196F3;
 }
 
-.client__item:hover .client__icon {
+.client__item:hover .client__icon, .client__item:focus .client__icon {
   fill: #2196F3;
 }
 

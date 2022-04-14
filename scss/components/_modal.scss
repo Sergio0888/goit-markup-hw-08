@@ -120,6 +120,12 @@
         .modal__input-icon {
             fill: $main-color;
         }
+
+        &:focus ~
+        .modal__input-item >
+        .modal__input-icon {
+            fill: $main-color;
+        }
     }  
 }
 .modal__form-textarea {

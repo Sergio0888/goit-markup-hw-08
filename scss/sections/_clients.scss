@@ -40,7 +40,7 @@
         }
     }
 
-    &:hover {
+    &:hover, &:focus {
         border-color: $main-color;
 
         .client__icon {
