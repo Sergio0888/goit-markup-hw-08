@@ -22,7 +22,10 @@
     transition: $main-trans;
 
     @media (max-width: 480px) {
-        max-width: 210px;
+        width: calc(50% - 15px);
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
     }
     
     @media (min-width: 481px) and (max-width: 1200px) {

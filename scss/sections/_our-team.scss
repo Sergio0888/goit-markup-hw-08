@@ -24,10 +24,8 @@
         border-radius: 0px 0px 4px 4px;
 
         @media (max-width: 480px) {
-            &:not(:last-child) {
-                margin-bottom: 30px;
+            margin-top: 30px;
         }
-    }
 
         @media (min-width: 481px) and (max-width: 1200px) {
             width: calc(50% - 15px);
