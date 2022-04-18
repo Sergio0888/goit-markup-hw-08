@@ -1,11 +1,11 @@
 .footer {
     background-color: #2F303A;
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1260px) {
         padding: 60px 15px;
         }
     
-        @media (min-width: 1201px) {
+        @media (min-width: 1261px) {
         padding: 60px 60px;
         }
 
@@ -17,7 +17,7 @@
             align-items: center;
         }
         
-        @media (min-width: 481px) and (max-width: 1200px) {
+        @media (min-width: 481px) and (max-width: 1260px) {
             flex-wrap: wrap;
             justify-content: space-around;
         }
@@ -25,7 +25,7 @@
 
     &__contacts-box {
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1260px) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -40,7 +40,7 @@
         line-height: 1.72;
         color: $second-text-color;
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1260px) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -81,12 +81,12 @@
             margin-top: 60px;
         }
         
-        @media (min-width: 481px) and (max-width: 1200px) {
+        @media (min-width: 481px) and (max-width: 1260px) {
             margin-top: 10px;
             align-self: flex-start;
         }
 
-        @media (min-width: 1201px) {
+        @media (min-width: 1261px) {
             margin-left: 70px;
             margin-top: 12px;
         }
@@ -98,7 +98,7 @@
         color: rgba(255, 255, 255, 1);
         margin-bottom: 20px;
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1260px) {
             text-align: center;
         }
     }
@@ -109,7 +109,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 1201px) {
+    @media (min-width: 1261px) {
         position: absolute;
         right: 0;
     }
@@ -118,14 +118,14 @@
 .subscribe-box {
      
     
-    @media (max-width: 1200px) {
+    @media (max-width: 1260px) {
         display: flex;
         flex-direction: column;
         margin-top: 60px;
         width: 100%;
     }
     
-    @media (min-width: 1201px) {
+    @media (min-width: 1261px) {
         width: 570px;
         position: relative;
         margin-left: 93px;
@@ -148,13 +148,13 @@
         margin-bottom: 20px;
     }
     
-    @media (min-width: 481px) and (max-width: 1200px) {
+    @media (min-width: 481px) and (max-width: 1260px) {
         margin-bottom: 20px;
         width: 450px;
         align-self: center;
     }
 
-    @media (min-width: 1201px) {
+    @media (min-width: 1261px) {
         position: absolute;
         left: 0;
         width: 362px;

@@ -1,11 +1,11 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 
-    @media (max-width: 480px) {
+    @media (max-width: 550px) {
         padding: 10px 15px;
     }
 
-    @media (min-width: 481px) and (max-width: 1200px) {
+    @media (min-width: 550px) and (max-width: 1200px) {
         padding: 21px 15px;
     }
 
@@ -27,15 +27,15 @@
     &__menu {
         display: flex;
 
-        @media (max-width: 480px) {
+        @media (max-width: 550px) {
             display: none;
         }
 
-        @media (min-width: 481px) and (max-width: 690px) {
-
+        @media (min-width: 550px) and (max-width: 710px) {
+            margin-left: 20px;
         }
 
-        @media (min-width: 690px) and (max-width: 1200px) {
+        @media (min-width: 710px) and (max-width: 1200px) {
             margin-left: 88px;
         }
 
@@ -51,8 +51,16 @@
         &:not(:last-child) {
             margin-right: 50px;
 
-            @media (min-width: 481px) and (max-width: 600px) {
-                margin-right: 0;
+            @media (min-width: 550px) and (max-width: 600px) {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+
+            @media (min-width: 601px) and (max-width: 700px) {
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
             }
         }
 
@@ -75,7 +83,7 @@
         transition: $main-trans;
         font-weight: 500;
 
-        @media (min-width: 481px) and (max-width: 1200px) {
+        @media (min-width: 550px) and (max-width: 1200px) {
             font-size: 14px;
             line-height: 16px;
             letter-spacing: 0.02em;
@@ -90,13 +98,13 @@
         display: flex;
         transition: $main-trans;
 
-        @media (max-width: 480px) {
+        @media (max-width: 550px) {
             display: none;
         }
-        @media (min-width: 481px) and (max-width: 1200px) {
+        @media (min-width: 550px) and (max-width: 920px) {
             flex-direction: column;
         }
-        @media (min-width: 1201px) {
+        @media (min-width: 921px) {
             align-items: center;
         }
 
@@ -105,13 +113,13 @@
     &__address-item {
         display: flex;
 
-        @media (max-width: 1200px) {
+        @media (max-width: 920px) {
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
         }
 
-        @media (min-width: 1201px) {
+        @media (min-width: 921px) {
             margin-left: 50px;
         }
     }
@@ -122,7 +130,7 @@
         transition: $main-trans;
         font-weight: 500;
 
-        @media (min-width: 481px) and (max-width: 1200px) {
+        @media (min-width: 550px) and (max-width: 1200px) {
             font-size: 12px;
             line-height: 14px;
             letter-spacing: 0.02em;
@@ -145,7 +153,7 @@
         margin-right: 10px;
         transition: $main-trans;
 
-        @media (min-width: 481px) and (max-width: 1200px) {
+        @media (min-width: 550px) and (max-width: 1200px) {
             max-width: 14px;
             max-height: 14px;
         }

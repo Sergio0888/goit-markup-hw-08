@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     
-    @media (max-width: 480px) {
+    @media (max-width: 550px) {
         padding: 118px 0;
         height: 400px;
         background-image: url(../images/bg-image/bg_mob@1x.jpg);
@@ -13,7 +13,7 @@
         }
     }
         
-    @media (min-width: 481px) and (max-width: 1200px) {
+    @media (min-width: 551px) and (max-width: 1200px) {
         padding: 118px 0;
         height: 400px;
         background-image: url(../images/bg-image/bg_tab@1x.jpg);
