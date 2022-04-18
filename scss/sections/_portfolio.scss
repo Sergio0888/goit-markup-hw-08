@@ -60,7 +60,7 @@
 .portfolio__item {
     transition: $main-trans;
 
-    @media (max-width: 480px) {
+    @media (max-width: 640px) {
         &:not(:last-child) {
             margin-bottom: 30px;
         }
